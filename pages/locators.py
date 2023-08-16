@@ -15,4 +15,7 @@ class ProductPageLocators():
 	BOOK_VALUE = (By.CSS_SELECTOR, ".col-sm-6.product_main .price_color")
 	BASKET_VALUE = (By.CSS_SELECTOR, ".alert.alert-info strong")
 	SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert.alert-success .alertinner strong")
+
+class BasePageLocators():
+	LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 	
