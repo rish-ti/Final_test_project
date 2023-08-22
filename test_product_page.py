@@ -3,7 +3,7 @@ from .pages.basket_page import BasketPage
 from .pages.login_page import LoginPage
 from selenium.webdriver.common.by import By
 import pytest
-import time
+
 
 @pytest.mark.parametrize('number', ["0",
                                   "1",
@@ -79,9 +79,7 @@ class TestUserAddToBasketFromProductPage():
 		link = "http://selenium1py.pythonanywhere.com/accounts/login/"
 		page = LoginPage(browser, link)
 		page.open()
-		email = str(time.time()) + "@fakemail.com"
-		password = "Fake_fake123"
-		page.register_new_user(email, password)
+		page.register_new_user()
 		page.should_be_authorized_user()
 
 
