@@ -27,4 +27,4 @@ class BasePageLocators():
 	
 class BasketPageLocators():
 	ITEMS_IN_BASKET = (By.CSS_SELECTOR, ".basket-items")
-	EMPTY_BASKET_MESSAGE = (By.XPATH, '//div[@id="content_inner"]//p[contains(text(), "Your basket is empty.")]')
+	EMPTY_BASKET_MESSAGE = (By.XPATH, '//div[@id="content_inner"]/p')
